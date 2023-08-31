@@ -6,7 +6,7 @@ public class Calculadora {
         return a * b;
     }
 
-    public int Subtracao(int a, int b){
+    public double Subtracao(double a, double b){
         return a-b;
     }
 

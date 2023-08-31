@@ -11,10 +11,16 @@ public class CalculadoraTest {
         assertEquals(20, calculadora.multiplicacao(4,5));
     }
 
-
+    
     @Test
     public void testSubtracao(){
         Calculadora calculadora = new Calculadora();
         assertEquals(10, calculadora.Subtracao(11,1));
     }
+    
+    @Test
+	public void testDivisao() {
+		Calculadora calculadora = new Calculadora();
+		assertEquals (05, calculadora.divisao(100,20));
+	}
 }

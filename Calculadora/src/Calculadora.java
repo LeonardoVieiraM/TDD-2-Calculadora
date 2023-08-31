@@ -10,7 +10,7 @@ public class Calculadora {
     }
 
     public int divisao(int a, int b){
-        return a/b;
+        return a/b ;
     }
     
     public static void main(String[] args) {

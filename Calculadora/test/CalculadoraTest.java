@@ -15,6 +15,6 @@ public class CalculadoraTest {
     @Test
     public void testSubtracao(){
         Calculadora calculadora = new Calculadora();
-        assertEquals(10, calculadora.subtracao(11,1));
+        assertEquals(10, calculadora.Subtracao(11,1));
     }
 }

@@ -16,4 +16,7 @@ public class Calculadora {
     public static void main(String[] args) {
         
     }
+    public int potenciacao(double base, double expoente){
+        return Math.pow(base, expoente)
+    }
 }

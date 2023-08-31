@@ -14,8 +14,18 @@ public class CalculadoraTest {
     
     @Test
     public void testSubtracao(){
+	// Teste com valores positivos
         Calculadora calculadora = new Calculadora();
         assertEquals(10, calculadora.Subtracao(11,1));
+
+	// Teste com resultado zero
+	assertEquals(0, calculadora.Subtracao(5,5));
+	
+	// Teste com resultado negativo
+	assertEquals(-3, calculadora.Subtracao(5,8));  
+
+	// Teste com valores decimais   
+	assertEquals(0.25, calculadora.Subtracao(2.5,2.25));    
     }
     
     @Test

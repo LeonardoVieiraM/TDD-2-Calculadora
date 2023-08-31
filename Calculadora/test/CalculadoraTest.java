@@ -23,4 +23,31 @@ public class CalculadoraTest {
 		Calculadora calculadora = new Calculadora();
 		assertEquals (05, calculadora.divisao(100,20));
 	}
+    @Test
+    public void testPotenciacao() {
+        // Teste com valores positivos
+        double base1 = 2.0;
+        double expoente1 = 3.0;
+        assertEquals(8.0, Potenciacao.Potenciacao(base1, expoente1), 0.0001);
+
+        // Teste com base zero
+        double base2 = 0.0;
+        double expoente2 = 5.0;
+        assertEquals(0.0, Potenciacao.Potenciacao(base2, expoente2), 0.0001);
+
+        // Teste com expoente zero
+        double base3 = 4.0;
+        double expoente3 = 0.0;
+        assertEquals(1.0, Potenciacao.Potenciacao(base3, expoente3), 0.0001);
+
+        // Teste com expoente negativo
+        double base4 = 3.0;
+        double expoente4 = -2.0;
+        assertEquals(1.0 / 9.0, Potenciacao.Potenciacao(base4, expoente4), 0.0001);
+
+        // Teste com valores decimais
+        double base5 = 1.5;
+        double expoente5 = 2.0;
+        assertEquals(2.25, Potenciacao.Potenciacao(base5, expoente5), 0.0001);
+    }	
 }

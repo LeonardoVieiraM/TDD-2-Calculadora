@@ -1,4 +1,5 @@
 package Calculadora.src;
+import java.lang.Math;
 
 public class Calculadora {
     public int multiplicacao(int a, int b) {

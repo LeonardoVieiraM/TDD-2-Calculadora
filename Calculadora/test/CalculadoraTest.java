@@ -10,4 +10,11 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         assertEquals(20, calculadora.multiplicacao(4,5));
     }
+
+
+    @Test
+    public void testSubtracao(){
+        Calculadora calculadora = new Calculadora();
+        assertEquals(10, calculadora.subtracao(11,1));
+    }
 }

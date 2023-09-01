@@ -10,8 +10,13 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         assertEquals(20, calculadora.multiplicacao(4,5));
     }
-
-    
+	
+    @Test
+    public void testAdicao() {
+	Calculadora calculadora = new Calculadora();
+	assertEquals(4, calculadora.Adicao(2,2));    
+    }
+	
     @Test
     public void testSubtracao(){
 	// Teste com valores positivos
